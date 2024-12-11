@@ -1,0 +1,124 @@
+
+.alerta {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 200px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(14, 5, 63); 
+    font-weight: bold; 
+    font-size: 16px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    text-align: center; 
+}
+
+/* Estilos para los colores */
+.alerta.red {
+    background-color: red;
+}
+
+.alerta.yellow {
+    background-color: yellow;
+}
+
+.alerta.green {
+    background-color: rgb(61, 252, 61);
+}
+body{
+    background-color: rgb(142, 214, 243);
+}
+/* Footer */
+
+.footer {
+    background-color: rgb(12, 11, 78);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center; /* Asegura que los íconos estén alineados verticalmente en el centro */
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;  /* Tamaño por defecto */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(122, 122, 111);
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #888;
+}
+
+.social-icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icon.whatsapp:hover {
+    background-color: #25d366;
+}
+
+.social-icon.instagram:hover {
+    background-color: #e4405f;
+}
+
+.social-icon.email:hover {
+    background-color: #bb001b;
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+
+/* Estilos responsive */
+
+/* Para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+        font-size: 9px;  /* Reducción del tamaño de texto */
+    }
+
+    .social-links {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .social-icon {
+        font-size: 9px;  /* Reducción del tamaño de los íconos */
+        padding: 8px;
+    }
+}
+
+/* Para pantallas muy pequeñas (por debajo de 480px) */
+@media (max-width: 480px) {
+    .footer {
+        font-size: 9px;  /* Más pequeño el texto */
+        padding: 10px 0;
+    }
+
+    .social-links {
+        gap: 10px;
+        padding: 0 5px; /* Añadí un pequeño margen para evitar que los íconos se peguen a los bordes */
+    }
+
+    .social-icon {
+        font-size: 9px;  /* Íconos más pequeños */
+        padding: 6px;
+    }
+}
